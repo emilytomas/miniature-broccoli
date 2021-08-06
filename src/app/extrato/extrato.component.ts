@@ -7,7 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./extrato.component.scss']
 })
 export class ExtratoComponent implements OnInit {
-  @Input() transferencias: any[] | undefined;
+  @Input()
+  transferencias!: any[];
   constructor() { }
 
   ngOnInit(): void {
